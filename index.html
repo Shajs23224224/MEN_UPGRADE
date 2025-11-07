@@ -3,271 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MEJORA_MASCULINA - Transforma tu vida con nuestros servicios y productos de desarrollo personal masculino">
-    <title>MEJORA_MASCULINA - Transforma tu vida</title>
+    <title>MEJORA_MASCULINA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Agregar meta tags para SEO -->
+    <meta name="description" content="MEJORA_MASCULINA - Transforma tu vida con nuestros programas de desarrollo personal">
+    <meta name="theme-color" content="#005ce6">
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mejoramasculina.com/">
-    <meta property="og:title" content="MEJORA_MASCULINA - Transforma tu vida">
-    <meta property="og:description" content="Descubre nuestros servicios y productos de desarrollo personal masculino">
-    <meta property="og:image" content="[URL_DE_LA_IMAGEN]">
+    <!-- Agregar soporte para PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" href="/favicon.ico">
     
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://mejoramasculina.com/">
-    <meta property="twitter:title" content="MEJORA_MASCULINA - Transforma tu vida">
-    <meta property="twitter:description" content="Descubre nuestros servicios y productos de desarrollo personal masculino">
-    <meta property="twitter:image" content="[URL_DE_LA_IMAGEN]">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/favicon.ico">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Estilos de carga inicial para prevenir parpadeo */
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        /* Establecer el tamaño del viewport para dispositivos móviles */
+        @media (max-width: 768px) {
+            html {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">
-                    <img src="[LOGO]" alt="MEJORA_MASCULINA Logo">
-                </a>
-                <div class="nav-links">
-                    <a href="#inicio">Inicio</a>
-                    <a href="#servicios">Servicios</a>
-                    <a href="#testimonios">Testimonios</a>
-                    <a href="#contacto">Contacto</a>
-                </div>
-                <div class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section with Video -->
-    <section id="inicio" class="hero">
-        <div class="video-container">
-            <video autoplay muted loop id="hero-video" poster="assets/video-poster.jpg">
-                <source src="[VIDEO_MEJORA_MASCULINA.mp4]" type="video/mp4">
-                <track src="subtitles.vtt" kind="subtitles" srclang="es" label="Español">
-                Tu navegador no soporta el elemento de video.
-            </video>
-            <div class="overlay"></div>
-            <div class="hero-content">
-                <h1>Transforma tu vida con MEJORA_MASCULINA</h1>
-                <p>Descubre el poder de tu mejor versión con nuestros programas y productos exclusivos</p>
-                <a href="#servicios" class="cta-button">Conoce nuestros servicios</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonios" class="testimonials">
-        <div class="container">
-            <h2>Lo que dicen nuestros clientes</h2>
-            <div class="testimonial-grid">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card">
-                    <div class="quote">"</div>
-                    <p>Increíble transformación en mi vida. Los resultados han superado mis expectativas.</p>
-                    <div class="client">
-                        <div class="client-info">
-                            <h4>Carlos M.</h4>
-                            <p>Cliente desde 2023</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card">
-                    <div class="quote">"</div>
-                    <p>La mejor inversión que he hecho en mi desarrollo personal. Totalmente recomendado.</p>
-                    <div class="client">
-                        <div class="client-info">
-                            <h4>Andrés G.</h4>
-                            <p>Cliente desde 2024</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card">
-                    <div class="quote">"</div>
-                    <p>Profesionales altamente capacitados que realmente se preocupan por tu progreso.</p>
-                    <div class="client">
-                        <div class="client-info">
-                            <h4>Miguel R.</h4>
-                            <p>Cliente desde 2024</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="servicios" class="services">
-        <div class="container">
-            <h2>Nuestros Servicios y Productos</h2>
-            <div class="services-grid" id="services-container">
-                <!-- Services will be loaded dynamically via JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <h2>Contáctanos</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Información de contacto</h3>
-                    <p><i class="fas fa-envelope"></i> atencion@[DOMINIO]</p>
-                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/573001234567?text=Hola%20MEJORA_MASCULINA,%20me%20interesa%20saber%20más%20sobre%20sus%20servicios" target="_blank">Chatea con nosotros</a></p>
-                    
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                    
-                    <div class="privacy-policy">
-                        <label class="checkbox-container">
-                            <input type="checkbox" id="privacy-check" required>
-                            <span class="checkmark"></span>
-                            Acepto la <a href="#" data-modal="privacy-policy">Política de Privacidad</a> y el tratamiento de mis datos según la Ley 1581 de 2012 de Colombia.
-                        </label>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3>Envíanos un mensaje</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" required placeholder="Tu nombre">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" required placeholder="Tu mensaje"></textarea>
-                        </div>
-                        <button type="submit" class="cta-button">Enviar mensaje</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="[LOGO]" alt="MEJORA_MASCULINA Logo">
-                    <p>Transformando vidas desde 2023</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Enlaces rápidos</h4>
-                    <a href="#inicio">Inicio</a>
-                    <a href="#servicios">Servicios</a>
-                    <a href="#testimonios">Testimonios</a>
-                    <a href="#contacto">Contacto</a>
-                    <a href="#" data-modal="privacy-policy">Política de Privacidad</a>
-                    <a href="#" data-modal="terms">Términos y Condiciones</a>
-                </div>
-                <div class="footer-newsletter">
-                    <h4>Suscríbete a nuestro boletín</h4>
-                    <form id="newsletterForm">
-                        <input type="email" placeholder="Tu correo electrónico" required>
-                        <button type="submit" class="cta-button">Suscribirse</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 MEJORA_MASCULINA. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Modals -->
-    <div id="serviceModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div id="modalContent"></div>
-        </div>
-    </div>
-
-    <!-- Privacy Policy Modal -->
-    <div id="privacy-policy" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Política de Privacidad</h2>
-            <div class="modal-body">
-                <p>En MEJORA_MASCULINA, en cumplimiento de la Ley 1581 de 2012 y el Decreto 1377 de 2013, nos comprometemos a proteger la privacidad de sus datos personales.</p>
-                <h3>1. Responsable del Tratamiento</h3>
-                <p>Los datos personales suministrados serán recolectados y tratados por MEJORA_MASCULINA, identificada con NIT [NIT], quien actuará como Responsable del Tratamiento de los datos personales.</p>
-                <h3>2. Finalidades del Tratamiento</h3>
-                <p>Sus datos personales serán utilizados para: (i) Procesar su solicitud de información, productos o servicios; (ii) Enviar información sobre nuestros productos y servicios; (iii) Realizar estudios de mercado y análisis estadísticos; (iv) Cumplir con obligaciones legales.</p>
-                <h3>3. Sus Derechos</h3>
-                <p>Usted tiene derecho a conocer, actualizar, rectificar y suprimir sus datos personales, así como a revocar la autorización previamente otorgada para el tratamiento de los mismos. Para ejercer estos derechos, puede contactarnos a atencion@[DOMINIO].</p>
-                <h3>4. Políticas de Tratamiento</h3>
-                <p>Puede consultar nuestra política completa de tratamiento de datos personales en [ENLACE_A_POLITICA_COMPLETA].</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Payment Forms (Hidden) -->
-    <div id="payment-forms" style="display: none;">
-        <form id="stripe-payment-form">
-            <div id="card-element"></div>
-            <button id="stripe-submit" class="cta-button">Pagar con Tarjeta</button>
-        </form>
-        <div id="paypal-button-container"></div>
-    </div>
-
-    <!-- Scripts -->
-    <!-- Stripe.js -->
-    <script src="https://js.stripe.com/v3/"></script>
+    <!-- Punto de montaje de la aplicación React -->
+    <div id="root"></div>
     
-    <!-- PayPal SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+    <!-- Script de la aplicación -->
+    <script type="module" src="/src/main.tsx"></script>
     
-    <!-- Calendly -->
-    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
-    
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "MEJORA_MASCULINA",
-        "url": "https://mejoramasculina.com",
-        "logo": "[URL_DEL_LOGO]",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+57-300-123-4567",
-            "contactType": "customer service",
-            "email": "atencion@[DOMINIO]"
-        },
-        "sameAs": [
-            "https://facebook.com/mejoramasculina",
-            "https://instagram.com/mejoramasculina",
-            "https://youtube.com/mejoramasculina"
-        ]
-    }
+    <!-- Cargar polyfills para navegadores antiguos -->
+    <script>
+        // Verificar si el navegador soporta todas las características necesarias
+        const isIE = !!window.MSInputMethodContext && !!document.documentMode;
+        if (isIE) {
+            // Cargar polyfills para IE si es necesario
+            const script = document.createElement('script');
+            script.src = 'https://polyfill.io/v3/polyfill.min.js?features=es2015%2Ces2016%2Ces2017%2Ces2018%2Ces2019%2Ces2020%2Cdefault';
+            document.body.appendChild(script);
+        }
     </script>
 </body>
 </html>
